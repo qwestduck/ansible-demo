@@ -1,0 +1,12 @@
+---
+- file:
+    path: /var/www/html/troll/public
+    state: directory
+
+- copy:
+    src: index.html
+    dest: /var/www/html/troll/public/index.html
+
+- copy:
+    src: totally-not-rick-astley.png
+    dest: /var/www/html/troll/public/totally-not-rick-astley.png

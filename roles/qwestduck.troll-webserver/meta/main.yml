@@ -1,0 +1,22 @@
+---
+galaxy_info:
+  author: William Panlener
+  description: Not a Rick Astley Apache VHost
+
+  license: license (GPL-3.0-only)
+
+  min_ansible_version: 2.9
+
+  galaxy_tags:
+    - rick
+    - astley
+    - rickroll
+    - apache
+
+dependencies:
+  - role: geerlingguy.apache
+    vars:
+      apache_remove_default_vhost: true
+      apache_vhosts:
+        - servername: "{{ inventory_hostname }}"
+          documentroot: "/var/www/html/troll/public"
