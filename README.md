@@ -10,3 +10,4 @@
 - Demo use of requirements.yml to specify dependency on a galaxy-hosted role.
 - Demo use of a static inventory.
 - Demo a role that generates an apache vhost and copies files to its document root.
+- Demo use of a playbook.

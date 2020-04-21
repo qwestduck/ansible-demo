@@ -1,0 +1,10 @@
+---
+- hosts: webservers
+  roles:
+    - geerlingguy.apache
+  become: yes
+
+- hosts: troll-webservers
+  roles:
+    - qwestduck.troll-webserver
+  become: yes
