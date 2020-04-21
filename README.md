@@ -8,3 +8,4 @@
 
 ## Ansible
 - Demo use of requirements.yml to specify dependency on a galaxy-hosted role.
+- Demo use of a static inventory.
